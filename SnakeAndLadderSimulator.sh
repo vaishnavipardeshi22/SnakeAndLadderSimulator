@@ -47,7 +47,6 @@ function checkOption()
 			;;
 	esac
 
-	echo $position
 }
 
 #FUNCTION TO CONTINUE PLAYING TILL REACHES WINNING POSITION
@@ -56,7 +55,10 @@ function winningPosition()
 	while [ $position -ne $WINNING_POSITION ]
 	do
 		checkOption
+		((rollDieCount++))
+		array[$rollDieCount]=$position
 	done
 }
 
 winningPosition
+
