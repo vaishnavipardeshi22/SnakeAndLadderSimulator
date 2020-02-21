@@ -56,7 +56,7 @@ function winningPosition()
 	do
 		checkOption
 		((rollDieCount++))
-		array[$rollDieCount]=$position
+		rollDieArray[$rollDieCount]=$position
 	done
 }
 
