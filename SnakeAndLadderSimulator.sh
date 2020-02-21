@@ -42,7 +42,6 @@ function checkOption()
 			;;
 		$SNAKE)
 			position=$(( position - rollDie ))
-
 			if [ $position -lt $START_POSITION ]
 			then
 				position=$START_POSITION
@@ -57,6 +56,7 @@ function winningPosition()
 {
 	while [ $position -ne $WINNING_POSITION ]
 	do
+		#FUNCTION CALL TO SET THE PLAYER
 		setPlayer
 	done
 }
