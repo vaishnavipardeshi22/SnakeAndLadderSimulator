@@ -32,11 +32,15 @@ function checkOption()
 			;;
 		$LADDER)
 			position=$(( position + rollDie ))
+			if [ $position -gt $WINNING_POSITION ]
+			then
+				position=$(( position - rollDie ))
+			fi
 			;;
 		$SNAKE)
 			position=$(( position - rollDie ))
 
-			if [ $position -lt 0 ]
+			if [ $position -lt $START_POSITION ]
 			then
 				position=$START_POSITION
 			fi
