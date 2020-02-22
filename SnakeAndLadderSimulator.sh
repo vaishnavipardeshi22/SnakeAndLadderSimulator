@@ -3,14 +3,13 @@
 echo " ******************************* WELCOME TO SNAKE AND LADDER SIMULATION ****************************** "
 
 #CONSTANTS
-NUMBER_OF_PLAYER=2
 START_POSITION=0
 NO_PLAY=1
 LADDER=2
 SNAKE=3
 WINNING_POSITION=100
 
-#VARIABLE
+#VARIABLES
 position=$START_POSITION
 positionOfPlayer1=$START_POSITION
 positionOfPlayer2=$START_POSITION
